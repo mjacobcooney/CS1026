@@ -1,5 +1,4 @@
 ##
-# Mathew Cooney, mcooney3, 250895639
 #This program takes user input and computes the price for a breakfast at the Good Morning America! restaurant.
 #
 # Price list for menu items.
