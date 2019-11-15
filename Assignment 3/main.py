@@ -1,8 +1,3 @@
-# Your main program, main.py, will prompt the user for the name of the two files – the file
-# containing the keywords.txt and the file containing the tweets.txt.  It will then call the function
-# compute_tweets with the two files to process the tweets.txt using the given keywords.txt.  Your main
-# program will get the results from compute_tweets and print the results; it should print the
-# results in a readable fashion (i.e., not just numbers).
 from sentiment_analysis import compute_tweets
 
 def specialPrint(results):
