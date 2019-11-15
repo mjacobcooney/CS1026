@@ -1,0 +1,56 @@
+# Your main program, main.py, will prompt the user for the name of the two files – the file
+# containing the keywords.txt and the file containing the tweets.txt.  It will then call the function
+# compute_tweets with the two files to process the tweets.txt using the given keywords.txt.  Your main
+# program will get the results from compute_tweets and print the results; it should print the
+# results in a readable fashion (i.e., not just numbers).
+from sentiment_analysis import compute_tweets
+
+def specialPrint(results):
+    print()
+    print("The results for Eastern are: ")
+    print()
+    print("Happiness score is: ", round(results[0][0], 2))
+    print()
+    print("The number of keyword tweets is: ", results[0][1])
+    print()
+    print("The total number of tweets is: ", results[0][2])
+    print()
+    print("****************************************************")
+    print()
+    print("The results for Central are: ")
+    print()
+    print("Happiness score is:  ", round(results[1][0], 2))
+    print()
+    print("The number of keyword tweets is: ", results[1][1])
+    print()
+    print("The total number of tweets is: ", results[1][2])
+    print()
+    print("****************************************************")
+    print()
+    print("The results for Mountain are: ")
+    print()
+    print("Happiness score is:  ", round(results[2][0], 2))
+    print()
+    print("The number of keyword tweets is: ", results[2][1])
+    print()
+    print("The total number of tweets is: ", results[2][2])
+    print()
+    print("****************************************************")
+    print()
+    print("The results for Pacific are: ")
+    print()
+    print("Happiness score is:  ", round(results[3][0], 2))
+    print()
+    print("The number of keyword tweets is: ", results[3][1])
+    print()
+    print("The total number of tweets is: ", results[3][2])
+
+inputTweetFile = input("Please enter the name of the tweet file you would like to perform a sentiment analysis on: ")
+print()
+inputKeyFile = input("Please enter the name of the key file you would like to use: ")
+print()
+print("Analyzing Tweets...")
+print()
+results = compute_tweets(inputTweetFile, inputKeyFile)
+if len(results) > 0:
+    specialPrint(results)
