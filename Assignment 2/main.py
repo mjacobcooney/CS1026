@@ -1,5 +1,4 @@
 ##
-# Mathew Cooney, mcooney3, 250895639
 # This program takes user input and computes the volume for three different shapes and exports the list to a file
 
 # Import functions from volume.py and summarize.py
